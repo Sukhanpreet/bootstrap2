@@ -1,0 +1,534 @@
+@import url('https://fonts.googleapis.com/css2?family=Amita&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root {
+    --black: #000000;
+    --blue: #5fcac7;
+    --white: #ffffff;
+    --blue-overlay: #003437;
+    --blue-btn: #064b4f;
+}
+
+
+.proCount {
+    display: none;
+}
+
+.buy {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+
+/* scroll bar s */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: var(--white);
+    box-shadow: inset 0 0 5px var(--black);
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--blue);
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--blue-overlay);
+}
+
+/* scroll bar e */
+
+
+.font-2 {
+    font-family: 'Amita', cursive;
+    color: #ffffff;
+}
+
+img {
+    object-fit: cover;
+}
+
+.image-fit {
+    width: 100%;
+    height: 100%;
+}
+
+p {
+    line-height: 1.9rem;
+}
+
+.divider {
+    width: 50px;
+    height: 5px;
+    background-color: var(--blue);
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.text-primary {
+    color: var(--blue) !important;
+}
+
+.bg-primary,
+.btn-primary {
+    background: var(--blue) !important;
+    border: none;
+}
+
+.btn {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-3 {
+    background-color: var(--blue-btn) !important;
+
+}
+
+.btn::after {
+    background-color: var(--white);
+}
+
+.btn-2::after {
+    background-color: var(--blue);
+}
+
+.btn:after,
+.btn-2:after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: 100%;
+    width: 50px;
+    height: 100px;
+    opacity: 0.5;
+    transition: all 0.6s ease-in-out;
+}
+
+.btn:hover:after {
+    right: -100%
+}
+
+
+
+
+.logo {
+    width: 150px;
+    height: 150px;
+}
+
+.logo-center {
+    width: 200px;
+    height: auto;
+    position: relative;
+}
+
+.logo-center img {
+    width: 150px;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+    z-index: 323;
+}
+
+.logo-main {
+    width: 80px;
+    height: 80px;
+}
+
+.logo img,
+.logo-main img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.navbar .megamenu {
+    padding: 1rem;
+}
+
+.navbar {
+    background-color: var(--white);
+}
+
+.nav-link {
+    color: black !important;
+}
+
+.nav-link:hover {
+    color: var(--blue) !important;
+}
+
+.wave:after {
+    content: "";
+    background-image: url(../img/wave_bg.png);
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 100%;
+    height: 8px;
+    background-size: 80px;
+    background-position: bottom;
+    z-index: 10;
+}
+
+.wave2::before {
+    content: "";
+    background-image: url(../img/wave_bg.png);
+    position: absolute;
+    left: 0;
+    top: -8px;
+    width: 100%;
+    height: 8px;
+    background-size: 80px;
+    background-position: bottom;
+    z-index: 10;
+    transform: rotate(180deg);
+}
+
+.carousel,
+.carousel-item {
+    max-height: 100vh;
+}
+
+/* carousel style s */
+.carousel-caption {
+    inset: 0;
+    top: 50%;
+    transform: translateY(-30%);
+}
+
+/* carousel style e */
+
+/* about s */
+#about,
+#sales {
+    background: url(../img/white_bg.jpg) center center/contain;
+}
+
+.cards .card {
+    max-width: 300px;
+    height: 450px;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    margin-inline: auto;
+    margin-block-end: 20px;
+
+}
+
+.cards .card-1 {
+    background: url(../img/pic1.jpg) center center/cover;
+}
+
+.cards .card-2 {
+    background: url(../img/pic2.jpg) center center/cover;
+}
+
+.cards .card-3 {
+    background: url(../img/pic3.jpg) center center/cover;
+}
+
+.cards .card-4 {
+    background: url(../img/pic4.jpg) center center/cover;
+}
+
+.cards .card-text {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    color: var(--white);
+
+}
+
+.mask {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, transparent 50%, var(--blue-overlay));
+}
+
+/* about e */
+
+
+/* Offer s */
+#offer {
+    background: url(../img/offer-bg.jpg) center center/cover fixed;
+}
+
+/* Offer e */
+
+/* sales s */
+.country li {
+    list-style: none;
+    display: inline-block;
+    width: 40%;
+    white-space: nowrap;
+}
+
+/* sales e */
+
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url(../img/arrow.svg);
+    transform: rotate(-180deg);
+}
+
+.accordion-button::after {
+    background-image: url(../img/arrow.svg);
+}
+
+
+.accordion-button:focus {
+    border: none;
+}
+
+.accordion-item {
+    background: none;
+}
+
+.sales-text {
+    letter-spacing: 1.5px;
+}
+
+.box {
+    overflow: hidden;
+}
+
+.box-image {
+    width: 100%;
+
+    aspect-ratio: 1/1;
+    transform: scale(1.15);
+    transition: all 0.3s ease-in-out;
+}
+
+.box-image:hover {
+    transform: scale(1);
+}
+
+.box-text {
+    width: 100%;
+    background: linear-gradient(to bottom, transparent 0%, var(--blue-overlay));
+}
+
+.slide-btn {
+    opacity: 0;
+}
+
+.sale-logo-img {
+    transform: rotateY(-1turn);
+    transition: all 0.3s;
+    transform-style: preserve-3d;
+    width: 100%;
+}
+
+.sale-logo:hover .sale-logo-img {
+    transform: rotateY(0deg);
+    transition: all .5s;
+}
+
+.sale-logo:hover .slide-btn {
+    animation: slide-up 300ms ease-in-out 1 alternate both;
+}
+
+.sale-logo:not(:hover) .slide-btn {
+    animation: slide-down 300ms ease-in-out 1 alternate both;
+}
+
+@keyframes slide-up {
+    from {
+        opacity: 0;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+    }
+
+    to {
+        opacity: 1;
+        top: -50px;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+}
+
+@keyframes slide-down {
+    from {
+        opacity: 1;
+        top: -50px;
+        left: 50%;
+        transform: translate(-50%);
+
+    }
+
+    to {
+
+        opacity: 0;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+}
+
+
+footer {
+    background: url(../img/footer-img.jpg) center center/cover no-repeat;
+    font-size: 0.8rem;
+}
+
+.fade-footer {
+    background-color: #00000080;
+}
+
+
+.contacts .list-group-item {
+    background: none;
+
+}
+
+.contacts .list-group-item i {
+    background-color: var(--white);
+    color: var(--blue);
+    transition: all 0.3s;
+}
+
+.contacts .list-group-item:hover i {
+    color: var(--white);
+    background-color: var(--blue);
+}
+
+.quick-links li,
+.opening li {
+    list-style-type: none;
+    margin-block: 10px;
+}
+
+.quick-links li:before {
+    display: inline-block;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font: var(--fa-font-solid);
+    content: '\f105';
+    padding-inline-end: 10px;
+}
+
+
+/* ============ desktop view ============ */
+@media(min-width: 992px) {
+
+    .navbar .has-megamenu {
+        position: static !important;
+    }
+
+    .navbar .megamenu {
+        top: auto;
+        left: 10%;
+        width: 80%;
+    }
+
+    .carousel,
+    .carousel-item {
+        max-height: calc(100vh + 20px);
+    }
+
+
+    .cards .card:hover {
+        transform: rotate(-6deg);
+    }
+
+    .cards {
+        transform: translateY(-50px);
+    }
+
+    .country li {
+        width: 32%;
+    }
+
+    .logo,
+    .logo-main {
+        display: none;
+    }
+
+    .logo-center img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -25%);
+    }
+
+    .nav-link {
+        font-size: 1.2rem;
+    }
+
+}
+
+/* ============ desktop view .end// ============ */
+
+/* ============ mobile view ============ */
+@media(max-width: 991px) {
+
+    /* .navbar.fixed-top .navbar-collapse,
+    .navbar.sticky-top .navbar-collapse {
+        overflow-y: auto;
+        max-height: 90vh;
+        margin-top: 10px;
+    } */
+
+    .navbar-collapse {
+        padding: 10px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        min-height: 100vh;
+        width: 80vw;
+        z-index: 666;
+        background-color: var(--white);
+        animation: sidebar-slide 400ms ease-in-out 1 alternate both;
+    }
+
+    .navbar-collapse ul {
+        padding-inline: 10px;
+    }
+
+    @keyframes sidebar-slide {
+        0% {
+            transform: translateX(-50%);
+        }
+
+        100% {
+            transform: translateX(0%);
+        }
+    }
+
+    .logo-main {
+        display: block;
+    }
+
+    .logo-center {
+        display: none;
+    }
+
+    .cards .card {
+        max-width: 200px;
+        height: 300px;
+
+    }
+
+}
+
+/* ============ mobile view .end// ============ */
